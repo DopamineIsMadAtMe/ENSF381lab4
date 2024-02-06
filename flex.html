@@ -1,9 +1,9 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : flex.html
 Assignment  : Lab 4 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Wade Banman, Abdul Shakoor Raed
+Submission  : Feb 5th, 2024
 Description : Flex Layouts.
 =========================================================
 -->
@@ -17,24 +17,7 @@ Description : Flex Layouts.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
-			border: 1px dashed gray;	
-		}
-		.row{ 
-			border: 1px solid red;			
-		}
-		.large {
-			border: 1px solid blue;	
-		}
-		.medium {
-			border: 1px solid green;	
-		}
-		.small {
-			border: 1px solid yellow;	
-		}		
-	</style>
+	
 
 	<style>
 		/* CSS for menu. You don't need to touch this part */
@@ -76,12 +59,15 @@ Description : Flex Layouts.
 		.body { 
 			/*I need some CSS codes.*/
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px; 
 			/*I need some CSS codes.*/
-			flex-grow: 1;
+			flex: 0 0 92%;
+			/* width: 90%; */
+
+
 		}
         
         .news-item { padding: 10px; }
@@ -110,10 +96,13 @@ Description : Flex Layouts.
 
         @media screen and (max-width: 768px) {
 			.body { 
-				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
+				flex-direction: row;
+				width: 100%;
+				
 			 }            
             /*I need some CSS codes.*/
 			.large { 
