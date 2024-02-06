@@ -1,12 +1,12 @@
 ## Project Overview
 
-*Fake News Webiste for UCalgary
+*Fake News Website for UCalgary
 
 *Contains 3 articles and 3 images
 
-*Used CSS to sytle and organize the different divs inside the code
+*Used CSS to style and organize the different divs inside the code
 
-*Managed to create fuidity with the images
+*Managed to create fluidity with the images
 
 *Pages are now flexible to different screen sizes
 
